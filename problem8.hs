@@ -1,9 +1,8 @@
-
 removeDup :: Eq a=>[a]->a->[a]
 removeDup [] _ = []
 removeDup (x:xs) y = if x == y
-						then (removeDup xs x)
-						else [x] ++ (removeDup xs x)
+	then (removeDup xs x)
+	else [x] ++ (removeDup xs x)
 
 myCompress :: Eq a=>[a]->[a]
 myCompress [] = []
